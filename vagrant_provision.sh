@@ -22,6 +22,9 @@ source ~/perl5/perlbrew/etc/bashrc
 perlbrew install perl-5.20.2
 perlbrew switch perl-5.20.2
 
+perl -V
+
+
 yum -y install perl-XML-LibXSLT
 yum -y install mod_perl
 
