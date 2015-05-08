@@ -13,7 +13,7 @@ cat /vagrant/.admin/authorized_keys >> /home/vagrant/.ssh/authorized_keys
 
 ## We need epel-release for php-mcrypt
 yum -y install epel-release
-yum -y install git php php-mcrypt vim mod_ssl man telnet perl-Template-Toolkit
+yum -y install git php php-mcrypt vim mod_ssl man telnet
 yum -y install mlocate
 
 yum -y install perlbrew
@@ -21,10 +21,10 @@ perlbrew init
 source ~/perl5/perlbrew/etc/bashrc
 perlbrew install perl-5.20.2
 perlbrew switch perl-5.20.2
-
 perl -V
 
 
+yum -y install perl-Template-Toolkit
 yum -y install perl-XML-LibXSLT
 yum -y install mod_perl
 
